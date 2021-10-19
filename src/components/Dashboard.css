@@ -1,0 +1,116 @@
+.Dashboard {
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/Bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.Dashboard__Title {
+  color: white;
+  font-size: 30px;
+  font-family: "Courgette", cursive;
+
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Dashboard__Title > p {
+  min-width: 380px;
+}
+.Dashboard__Container {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: "Ephesis", cursive;
+}
+.Dashboard__DiaryName input,
+.Dashboard__DiaryStory textarea,
+.Dashboard__Update button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-family: "Ephesis", cursive;
+}
+.Dashboard__DiaryName {
+  text-align: left;
+  min-height: 20px;
+}
+.Dashboard__DiaryName input {
+  width: 100%;
+}
+.Dashboard__DiaryStory {
+  margin: 20px;
+  flex: 1;
+}
+.Dashboard__DiaryStory textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #351c0285;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: "Courgette", cursive;
+}
+.Dashboard__Update {
+  margin-top: 20px;
+  margin-left: auto;
+  min-height: 20px;
+}
+.Dashboard__Container.active {
+  background: transparent;
+}
+.Dashboard__DiaryName.active,
+.Dashboard__DiaryStory.active,
+.Dashboard__Update.active {
+  visibility: hidden;
+  opacity: 0;
+}
+.Dashboard__StoryUpdated {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+}
+.Dashboard__StoryUpdated.active {
+  visibility: visible;
+  opacity: 1;
+}
+.Dashboard__StoryUpdated div {
+  box-sizing: border-box;
+  background: #261709;
+  padding: 60px 100px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+.Dashboard__StoryUpdated p {
+  margin: 0px 0px 50px 0px;
+  font-family: "Ephesis", cursive;
+  font-style: 30px;
+}
+.Dashboard__StoryUpdated button {
+  padding: 10px 30px;
+  font-family: "Courgette", cursive;
+}
